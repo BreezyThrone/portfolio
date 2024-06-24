@@ -1,21 +1,33 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f0f8ff;
+    color: #333;
 }
 
-header, footer {
-    background-color: #333;
+header {
+    background-color: #0044cc;
     color: #fff;
-    text-align: center;
     padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .profile {
@@ -28,16 +40,20 @@ nav a {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    border: 5px solid #0044cc;
 }
 
 .info, .works, .contact-info {
     padding: 2em;
     max-width: 800px;
     margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 h1, h2 {
-    color: #333;
+    color: #0044cc;
 }
 
 ul {
@@ -47,4 +63,18 @@ ul {
 
 ul li {
     padding: 0.5em 0;
+}
+
+footer {
+    background-color: #0044cc;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
